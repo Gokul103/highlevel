@@ -2,7 +2,7 @@ const express = require("express");
 const oApp = express();
 const port = 5000;
 
-
+oApp.use(express.json());
 
 const firebaseAdmin = require("firebase-admin");
 const credentials = require("./firebase.json");
